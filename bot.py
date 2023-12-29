@@ -246,7 +246,7 @@ async def hack(event):
 
 
 
-Channel: {devuser}
+Dev: {devuser}
 ''', buttons=keyboard, link_preview=False)
 
 
