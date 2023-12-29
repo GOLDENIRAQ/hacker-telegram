@@ -1,5 +1,5 @@
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Generalghost890/Sessioncrackerbot/)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/GOLDENIRAQ/hacker-telegram/)
 
 جميع الحقوق ل https://t.me/Py_31
 يحق للاستخدام الكامل وتغيير الحقوق والتغديل واضافة وحذف
