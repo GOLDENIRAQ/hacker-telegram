@@ -6,26 +6,10 @@
 
     ],
     "website": "",
-    "success_url": "https://t.me/Py_31",
+    "success_url": "https://t.me/THE_R5",
     "env": {
-        "BOT_TOKEN": {
+        "GOLD_TOKEN": {
             "description": "توكن البوت من @botfather",
-            "value": ""
-        },
-        "API_HASH": {
-            "description": "ايبي هاش لك",
-            "value": ""
-        },
-        "APP_ID": {
-            "description": "ايبي ايدي لك",
-            "value": ""
-        },
-        "DEVELOPER_ID": {
-            "description": "ايدي المطور ",
-            "value": ""
-        },
-        "DEVELOPER_USER": {
-            "description": "يوزر قناة المطور او يوزر المطور",
             "value": ""
         }
         
