@@ -1,6 +1,6 @@
 <?php
 ob_start();
-$API_KEY = os.environ.get("BOT_TOKEN")
+$API_KEY = os.environ.get("GOLD_TOKEN")
 define('API_KEY',$API_KEY);
 echo file_get_contents("https://api.telegram.org/bot" . API_KEY . "/setwebhook?url=" . $_SERVER['SERVER_NAME'] . "" . $_SERVER['SCRIPT_NAME']);
             function bot($method,$datas=[]){
