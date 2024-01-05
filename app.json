@@ -11,6 +11,10 @@
         "GOLD_TOKEN": {
             "description": "توكن البوت من @botfather",
             "value": ""
+        },
+         "GOLD_ID": {
+            "description": "الايدي ضلعي",
+            "value": ""
         }
         
     },
