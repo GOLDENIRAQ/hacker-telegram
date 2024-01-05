@@ -3,7 +3,7 @@ import  requests
 from telebot import types
 import telebot
 
-Token = os.environ.get("GOLD_TOKEN")
+Token=os.environ.get("GOLD_TOKEN")
 
 GOLD = types.InlineKeyboardButton(text ="قم بضغط لبدء التشغيل ⚡️",callback_data = "GOLD")
 
